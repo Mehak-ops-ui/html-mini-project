@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #fff;
+  border-radius: 20px;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.welcome-box h1 {
+  font-size: 32px;
+  color: #333;
+}
+
+.welcome-box p {
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.button-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+.login {
+  background-color: #4facfe;
+  color: white;
+}
+
+.signup {
+  background-color: #00f2fe;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+@media only screen and (max-width: 600px)
+{
+  .container {
+    background-color: rgb(195, 227, 223);
+    width: 200px;
+    height: auto; /* allow height to adjust based on content */
+    padding: 5px;
+    border-radius: 8px;
+    border: 7px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* replaced auto */
+}
+.btn {
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 300px;
+  font-size: 16px;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+}

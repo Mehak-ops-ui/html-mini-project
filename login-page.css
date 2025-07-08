@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(15, 82, 82); 
+    font-family: Arial, Helvetica, sans-serif;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* full screen height */
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(195, 227, 223);
+    width: 500px;
+    height: auto; /* allow height to adjust based on content */
+    padding: 40px;
+    border-radius: 8px;
+    border: 7px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* replaced auto */
+}
+
+.container h1, .container h4 {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.container input {
+    background-color: rgb(150, 226, 229);
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.container label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* space between buttons */
+    margin-top: 40px;
+}
+
+.button-container button {
+    width: 120px;
+    height: 45px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-btn {
+
+    color: white;
+}
+
+.login-btn {
+    color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+.container {
+    background-color: rgb(195, 227, 223);
+    width: 10px;
+    height: 13px;
+    border-radius: 8px;
+    border: 7px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); .button-container button {
+    width: 120px;
+    height: 45px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+}
